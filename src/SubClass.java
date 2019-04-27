@@ -1,10 +1,11 @@
 
 public class SubClass extends SuperClass {
-	public void instanceMethod() {
-		System.out.println("SUBCLASS -> INSTANCE");
+	public String localVariable = "string shadowed int of super";
+	public String instanceMethod() {
+		return "SUBCLASS -> INSTANCE";
 	}
 	
-	public static void staticMethod() {
-		System.out.println("SUBCLASS -> STATIC");
+	public static String staticMethod() {
+		return "SUBCLASS -> STATIC";
 	}
 }

@@ -1,11 +1,12 @@
 
 public class SuperClass {
-	public void instanceMethod() {
-		System.out.println("SUPERCLASS -> INSTANCE");
+	public int localVariable = 1;
+	public String instanceMethod() {
+		return "SUPERCLASS -> INSTANCE";
 	}
 	
-	public static void staticMethod() {
-		System.out.println("SUPERCLASS -> STATIC");
+	public static String staticMethod() {
+		return "SUPERCLASS -> STATIC";
 	}
 
 }
